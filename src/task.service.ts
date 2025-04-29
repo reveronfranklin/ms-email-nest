@@ -20,7 +20,7 @@ export class TaskService {
     private readonly notificacionEmailService: NotificacionEmailService,
   ) {}
 
-  //@Cron(EVERY_AT_3_MINUTES) // ENVIA CORREO CADA 3 MINUTOS
+  @Cron(EVERY_AT_3_MINUTES) // ENVIA CORREO CADA 3 MINUTOS
   async handlerCronSendEmails() {
     this.logger.log(`Iniciando envio de Emails por lote`);
     const idFiles = ['hvenezue.id', 'RRHH'];
