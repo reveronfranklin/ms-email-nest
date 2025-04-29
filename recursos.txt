@@ -1,0 +1,11 @@
+docker build --tag ms-mail-nest .
+
+
+
+
+cron scheduler
+https://www.youtube.com/watch?v=XQWSyM9d7M4
+
+
+ejemplos para configurar el cron
+https://crontab.guru/examples.html

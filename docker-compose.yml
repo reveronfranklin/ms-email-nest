@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - '3002:3002' # HOST:CONTAINER
+    env_file:
+      - .env # Carga las variables del .env
+    restart: unless-stopped
